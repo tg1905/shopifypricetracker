@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Price Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Shopify Tracker</h1>
+                <button id="export-csv" class="btn-icon" title="Export to CSV">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                </button>
+            </div>
+            <p class="subtitle">Monitor competitor prices</p>
+        </header>
+
+        <section class="input-group">
+            <input type="text" id="store-url" placeholder="Enter Shopify product URL..." aria-label="Shopify product URL">
+            <button id="add-store" class="btn-primary">Add</button>
+        </section>
+
+        <section class="tracked-list-section">
+            <h2>Tracked Products</h2>
+            <div id="tracked-list" class="scroll-area">
+                <p class="empty-msg">No products tracked yet.</p>
+            </div>
+            <button id="check-prices" class="btn-secondary">Check Prices Now</button>
+
+        </section>
+
+
+        <section class="history-section">
+            <h2>Change History</h2>
+            <div id="history-container" class="scroll-area">
+                <p class="empty-msg">No history data available.</p>
+            </div>
+        </section>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
