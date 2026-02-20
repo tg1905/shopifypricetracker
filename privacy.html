@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Shopify Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Logo">
+                    Shopify Price Tracker
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="#" class="btn-nav">Add to Chrome</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="privacy-content">
+            <h1>Privacy Policy</h1>
+            <span class="last-updated">Last Updated: February 20, 2026</span>
+
+            <p>Your privacy is important to us. This Privacy Policy explains how Shopify Price Tracker ("we", "us", or "our") handles information when you use our Chrome extension.</p>
+
+            <h2>1. Information We Collect</h2>
+            <p><strong>We do not collect, transmit, or share any personal data.</strong> Shopify Price Tracker operates entirely on your device. We have no servers, no databases, and no backend infrastructure that receives your data.</p>
+            <p>The extension stores the following data <strong>locally on your device only</strong>:</p>
+            <ul>
+                <li><strong>Tracked product data:</strong> Product URLs, names, images, and current prices that you choose to track.</li>
+                <li><strong>Price history:</strong> Records of detected price changes, including old and new prices, timestamps, and percentage changes (capped at 100 entries).</li>
+                <li><strong>License key:</strong> If you upgrade to Pro, your Gumroad license key is stored locally for validation. This key is never transmitted to any server.</li>
+                <li><strong>Preferences and flags:</strong> Settings such as notification preferences and onboarding status.</li>
+            </ul>
+
+            <h2>2. How We Use Information</h2>
+            <p>All locally stored data is used exclusively to provide the extension's core functionality:</p>
+            <ul>
+                <li>Displaying your tracked products and their current prices.</li>
+                <li>Detecting and alerting you about price changes via browser notifications.</li>
+                <li>Showing price change history and enabling CSV export.</li>
+                <li>Validating your Pro license key to unlock premium features.</li>
+            </ul>
+
+            <h2>3. Data Storage</h2>
+            <p>All data is stored exclusively in your browser's local storage mechanism (<code>chrome.storage.local</code>). This data:</p>
+            <ul>
+                <li>Never leaves your computer.</li>
+                <li>Is not transmitted to any external server, API, or third party.</li>
+                <li>Is not accessible to us or anyone else.</li>
+                <li>Is automatically removed when you uninstall the extension.</li>
+            </ul>
+
+            <h2>4. Data Retention &amp; Deletion</h2>
+            <p>Your data is retained locally until you choose to delete it. You can delete your data at any time by:</p>
+            <ul>
+                <li>Using the <strong>"Clear History"</strong> button in the extension popup to remove price history.</li>
+                <li>Removing individual tracked products via the extension interface.</li>
+                <li>Uninstalling the extension, which removes all stored data.</li>
+            </ul>
+            <p>Price history is automatically capped at 100 entries to prevent excessive storage usage.</p>
+
+            <h2>5. Third-Party Data Sharing</h2>
+            <p>We do <strong>not</strong>:</p>
+            <ul>
+                <li>Sell, transfer, or share any user data with third parties, data brokers, or information resellers.</li>
+                <li>Use any data for advertising, marketing, or profiling purposes.</li>
+                <li>Use any data to determine creditworthiness or for lending purposes.</li>
+                <li>Transfer data to any external service or analytics platform.</li>
+            </ul>
+
+            <h2>6. Permissions Explained</h2>
+            <p>We request only the permissions necessary for core functionality:</p>
+            <ul>
+                <li><strong>Storage:</strong> To save your tracked products, price history, and preferences locally on your device.</li>
+                <li><strong>Alarms:</strong> To schedule automatic background price checks at regular intervals.</li>
+                <li><strong>Notifications:</strong> To alert you via browser notifications when a price drop is detected.</li>
+                <li><strong>Tabs:</strong> To open product pages in background tabs for automated price checking. These tabs are closed immediately after data extraction.</li>
+                <li><strong>Host Permissions (all URLs):</strong> Required because Shopify stores can operate on any custom domain. The extension needs to access product pages across different domains to extract publicly available pricing information.</li>
+            </ul>
+
+            <h2>7. Website Access &amp; Browsing Activity</h2>
+            <p>The extension includes a content script that runs on web pages you visit. This script:</p>
+            <ul>
+                <li><strong>Only activates</strong> on Shopify product pages (pages containing <code>/products/</code> in the URL).</li>
+                <li>Extracts only publicly available product information: product name, price, currency, discount status, and product image.</li>
+                <li>Does <strong>not</strong> access, read, or store any other page content, form data, passwords, cookies, or browsing history.</li>
+                <li>Does <strong>not</strong> track which websites you visit.</li>
+            </ul>
+            <p>All extracted product data stays on your device and is never transmitted externally.</p>
+
+            <h2>8. Analytics</h2>
+            <p>We do not use any third-party analytics tools (such as Google Analytics, Mixpanel, or similar) inside the extension. We have no mechanism to track your usage or browsing activity.</p>
+
+            <h2>9. Children's Privacy</h2>
+            <p>Shopify Price Tracker is not directed at children under the age of 13. We do not knowingly collect any information from children. If you believe a child has used this extension, please contact us.</p>
+
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p><a href="mailto:tugay.gokdeniz@yandex.com">tugay.gokdeniz@yandex.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:tugay.gokdeniz@yandex.com">Contact Support</a>
+            </div>
+            <p class="copyright">&copy; 2026 Shopify Price Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
