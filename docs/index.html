@@ -3,94 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopify Price Tracker - Monitor Competitor Prices</title>
+    <title>PriceSpy for Shopify - Competitor Pricing Tracker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="icon128.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">
-                    <img src="icon128.png" alt="Logo">
-                    Shopify Price Tracker
-                </a>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="javascript:void(0);" class="btn-nav" onclick="alert('We are currently under review by Chrome Web Store. Check back soon!')">Add to Chrome</a>
-                </div>
-            </nav>
+    <header class="header">
+        <div class="logo">
+            <img src="icon128.png" alt="PriceSpy Logo">
+            <span>PriceSpy</span>
         </div>
+        <nav class="nav">
+            <a href="#features">Features</a>
+            <a href="privacy.html">Privacy</a>
+        </nav>
+        <a href="javascript:void(0);" class="btn btn-outline" onclick="alert('Waiting for Chrome Web Store approval!')">Install via Chrome</a>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Track Competitor Prices, <br>Win More Sales</h1>
-            <p>The easiest way to monitor Shopify stores. Get instant alerts when prices drop and visualize price history over time.</p>
-            <a href="javascript:void(0);" class="btn-hero" onclick="alert('We are currently under review by Chrome Web Store. Check back soon!')">Add to Chrome - It's Free</a>
-        </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="blinking-dot"></span>
+                    <span style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">v1.2.0 LIVE ON WEB STORE</span>
+                </div>
+                
+                <h1 class="target-title">
+                    Track Prices.<br>
+                    Beat <span>Competitors.</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    The simplest way to monitor Shopify stores. PriceSpy automatically checks competitor prices for you, sends alerts when they drop, and keeps a detailed history.
+                </p>
 
-    <section class="features">
-        <div class="container">
-            <h2>Why Use Shopify Price Tracker?</h2>
-            <div class="grid">
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>Smart Extraction</h3>
-                    <p>Automatically detects product prices on any Shopify store instantly. No configuration needed.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📉</div>
-                    <h3>Price Drop Alerts</h3>
-                    <p>Get notified immediately when a competitor lowers their price, so you can react fast.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📊</div>
-                    <h3>Historical Data</h3>
-                    <p>Visualize price trends over time with clean charts and CSV export capability.</p>
+                <div class="hero-actions">
+                    <a href="javascript:void(0);" class="btn btn-primary" onclick="alert('Waiting for Chrome Web Store approval!')">Add to Chrome — It's Free</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="setup">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="step">
-                <div class="step-number">1</div>
-                <div>
-                    <h3>Install the Extension</h3>
-                    <p>Add Shopify Price Tracker to your Chrome browser in seconds.</p>
+            <!-- Hero Graphic (Realistic CSS Mockup extracted from presentation_640x400) -->
+            <div class="hero-graphic">
+                <div class="mockup-wrapper">
+                    <div class="popup-frame">
+                        <div class="container">
+                            <header class="mock-ext-header">
+                                <div class="header-top">
+                                    <h1 style="font-size:1.25rem;">PriceSpy</h1>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.8"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                </div>
+                                <span class="subtitle">Monitor competitor prices</span>
+                            </header>
+                
+                            <div style="display:flex; gap:8px;">
+                                <input type="text" placeholder="https://store.com/product..." style="flex:1; padding:10px; border:1px solid #dfe3e8; border-radius:8px; font-size:13px; color:#999;" disabled>
+                                <button style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:white; border:none; padding:0 16px; border-radius:8px; font-weight:600;">Add</button>
+                            </div>
+                
+                            <div>
+                                <h2 class="section-heading">Tracked Products (3)</h2>
+                                
+                                <div class="tracked-item">
+                                    <div class="item-img">
+                                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&q=80" alt="Headphones">
+                                    </div>
+                                    <div class="item-info">
+                                        <span class="item-name">Wireless Noise Cancelling Headphones</span>
+                                        <div class="item-price-row">
+                                            <span class="item-price">$59.99</span>
+                                            <span class="badge-drop">↓ 15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="tracked-item">
+                                    <div class="item-img">
+                                        <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=100&q=80" alt="Yoga Mat">
+                                    </div>
+                                    <div class="item-info">
+                                        <span class="item-name">Premium Yoga Mat - Eco Friendly</span>
+                                        <div class="item-price-row">
+                                            <span class="item-price">€45.00</span>
+                                            <span class="discount-badge">🏷️ On sale</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="history-section">
+                                <div class="history-header-row">
+                                    <h2 class="section-heading" style="margin:0;">Recent Activity</h2>
+                                </div>
+                                <div class="history-list">
+                                    <div class="history-item">
+                                        <div class="history-cell col-date">Today</div>
+                                        <div class="history-cell col-name">Wireless Headphones</div>
+                                        <div class="history-cell col-change drop">↓ $10.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="btn-check">Check Prices Now</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <div>
-                    <h3>Visit Any Product Page</h3>
-                    <p>Navigate to a competitor's Shopify product page. Click "Add" in the popup.</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <div>
-                    <h3>Relax & Monitor</h3>
-                    <p>We'll check prices in the background every 12 hours and alert you of changes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="mailto:tugay.gokdeniz@yandex.com">Contact Support</a>
+        <!-- Features Bento Grid -->
+        <section id="features" class="bento-grid">
+            <div class="bento-box feature-large">
+                <h3 class="block-title">How It Works</h3>
+                <h2>Set It and Forget It</h2>
+                <p>Tracking competitors shouldn't be a full-time job. Simply copy a Shopify product URL, paste it into the extension, and let PriceSpy do the heavy lifting in the background.</p>
+                <div class="step-process">
+                    <div class="step-card">
+                        <span class="step-num">1</span>
+                        <h4>Add Product</h4>
+                        <p>Paste any Shopify URL</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-num">2</span>
+                        <h4>We Monitor</h4>
+                        <p>Checks happen automatically</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-num">3</span>
+                        <h4>Get Alerts</h4>
+                        <p>Notification on price drops</p>
+                    </div>
+                </div>
             </div>
-            <p class="copyright">&copy; 2026 Shopify Price Tracker. All rights reserved.</p>
+
+            <div class="bento-box feature-small card-1">
+                <div class="icon-cube">🔔</div>
+                <h3>Smart Alerts</h3>
+                <p>Get notified instantly when a competitor lowers their price, so you can adjust yours to win the sale.</p>
+            </div>
+
+            <div class="bento-box feature-small card-2">
+                <div class="icon-cube">📊</div>
+                <h3>Price History</h3>
+                <p>See exactly when prices changed. Understand competitor discounting strategies over time.</p>
+            </div>
+            
+            <div class="bento-box feature-wide">
+                <h3 class="block-title">Zero Configuration</h3>
+                <h2>Works on Any Shopify Store</h2>
+                <p>No complicated setups or coding required. If the store is built on Shopify, PriceSpy can automatically extract the real price, skipping fake promotional "strikethrough" gimmicks.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="icon128.png" alt="PriceSpy Logo" style="width: 20px; filter: grayscale(1);">
+                <span>PriceSpy</span>
+            </div>
+            <p>© 2026 VitrinLabs. Not affiliated with Shopify Inc.</p>
+        </div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:tugay.gokdeniz@yandex.com">Support</a>
         </div>
     </footer>
 
